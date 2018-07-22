@@ -2,12 +2,11 @@ package com.qoobico.remindme.server.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 
-
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="remind")
+@Table(name = "remind")
 public class Remind {
 
     @Id
