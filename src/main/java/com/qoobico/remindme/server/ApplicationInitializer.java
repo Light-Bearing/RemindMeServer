@@ -9,11 +9,10 @@ import org.springframework.web.servlet.DispatcherServlet;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
-import java.util.Set;
 
-public class ApplicationInitialiyer implements WebApplicationInitializer {
+public class ApplicationInitializer implements WebApplicationInitializer {
 
-    private final static String DISPATCHER = "dispatchar";
+    private final static String DISPATCHER = "dispatcher";
 
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
