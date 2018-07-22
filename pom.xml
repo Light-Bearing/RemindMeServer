@@ -4,9 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qoobico.remindme.sever</groupId>
-    <artifactId>com.qoobico.remindme.sever</artifactId>
+    <groupId>com.qoobico.remindme.server</groupId>
+    <artifactId>com.qoobico.remindme.server</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
     <properties>
         <spring.version>4.2.2.RELEASE</spring.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
