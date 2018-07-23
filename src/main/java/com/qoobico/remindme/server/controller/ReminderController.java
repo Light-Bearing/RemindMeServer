@@ -14,14 +14,15 @@ import java.util.List;
 @RestController
 @RequestMapping("/reminder")
 public class ReminderController {
+
     @Autowired
     private RemindRepository remindRepository;
 
     @RequestMapping(value = "/get", method = RequestMethod.GET)
     @ResponseBody
     public Remind getReminder() {
-        List<Remind> remindList = remindRepository.findAll();
-        return createMockRemid();
+        List<Remind> list = remindRepository.findAll();
+          return createMockRemid();
     }
 
     private Remind createMockRemid() {
